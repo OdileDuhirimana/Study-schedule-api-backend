@@ -74,6 +74,25 @@ EMAIL_PASS=your_email_password
 All API endpoints are prefixed with `/api`.
 
 ### Authentication Endpoints
+- `POST /api/auth/register` → Register a new user  
+- `POST /api/auth/login` → Login and receive a JWT  
+- `GET /api/auth/me` → Get authenticated user info  
+
+### Courses Endpoints
+- `GET /api/courses` → Get all courses for a user  
+- `POST /api/courses` → Create a course  
+- `PUT /api/courses/:id` → Update a course  
+- `DELETE /api/courses/:id` → Delete a course  
+
+### Tasks Endpoints
+- `GET /api/tasks` → Get all tasks (with course info)  
+- `GET /api/tasks/overdue` → Get overdue tasks  
+- `POST /api/tasks` → Create a task  
+- `PUT /api/tasks/:id` → Update a task  
+- `PATCH /api/tasks/:id/toggle` → Toggle task completion  
+- `DELETE /api/tasks/:id` → Delete a task  
+
+### Authentication Endpoints testing
 
 -   `POST /api/auth/register`
     -   **Description:** Registers a new user.
